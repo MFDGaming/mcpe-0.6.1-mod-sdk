@@ -42,7 +42,7 @@ class Mod:
             indices.append(old_index)
             for patch in self.patches[1:]:
                 old_index = old_index + old_code_length
-                old_length = len(patch.code) + 4
+                old_code_length = len(patch.code) + 4
                 indices.append(old_index)
         return indices
 
